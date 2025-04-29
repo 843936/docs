@@ -59,6 +59,9 @@ and ready for role assignments.
 
 <CodeBlock folderPath="/walkthroughs/sync-first-user/sync-sdk-request" />
 
+const result = await permit.api.users.sync(userData); ✅
+const result = await permit.users.sync(userData); ❌
+
 :::tip Sync Users via SCIM
 Permit supports user synchronization through **SCIM** (System for Cross-domain Identity Management). This allows seamless integration with
 identity providers like [Entra ID](/integrations/SCIM/EntraID), [Okta](/integrations/SCIM/OKTA), and others. SCIM simplifies user management by automatically provisioning, updating,
